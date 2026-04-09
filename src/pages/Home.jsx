@@ -72,14 +72,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Brand Partner */}
+      {/* Brand Partners */}
       <section className="py-12 px-6 bg-white">
-        <div className="max-w-7xl mx-auto flex flex-col items-center gap-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em]" style={{ color: COLORS.charcoal + '66' }}>Authorized Dealer</p>
-          <img src="/images/icon-logo-green.png" alt="ICON Electric Vehicles" className="h-12 w-auto" />
-          <p className="text-sm text-center max-w-lg" style={{ color: COLORS.charcoal + '88' }}>
-            ICON Electric Vehicles — award-winning golf carts recognized at the 2025 PGA Show. Premium quality, cutting-edge technology, built to last.
-          </p>
+        <div className="max-w-7xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-center mb-8" style={{ color: COLORS.charcoal + '66' }}>Authorized Dealer — Brands We Carry</p>
+          <div className="flex flex-wrap justify-center items-center gap-12">
+            <img src="/images/icon-logo-green.png" alt="ICON Electric Vehicles" className="h-12 w-auto opacity-80 hover:opacity-100 transition" />
+            <img src="/images/epic-logo.avif" alt="Epic Golf Carts" className="h-12 w-auto opacity-80 hover:opacity-100 transition" />
+            <img src="/images/denago-logo.avif" alt="Denago" className="h-12 w-auto opacity-80 hover:opacity-100 transition" />
+          </div>
         </div>
       </section>
 

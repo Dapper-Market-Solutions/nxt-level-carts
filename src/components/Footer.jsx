@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <div className="text-lg font-bold tracking-wide text-white uppercase mb-4">
-              {DEALER.name}
+            <div className="mb-4">
+              <img src="/images/nxt-level-logo.avif" alt={DEALER.name} className="h-10 w-auto" />
             </div>
             <p className="text-white/40 text-sm leading-relaxed mb-4 max-w-xs">
               Award-winning ICON electric golf carts. Experience the next level of personal transportation in {DEALER.city}, {DEALER.state}.
