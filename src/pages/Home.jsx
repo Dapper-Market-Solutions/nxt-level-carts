@@ -127,7 +127,10 @@ export default function Home() {
                   )}
                 </div>
                 <div className="p-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: COLORS.primary }}>{model.type}</p>
+                  <div className="flex items-start justify-between mb-1">
+                    <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: COLORS.primary }}>{model.type}</p>
+                    {model.price && <span className="text-sm font-bold" style={{ color: COLORS.primary }}>{model.price}</span>}
+                  </div>
                   <h3 className="text-lg font-bold mb-3" style={{ color: COLORS.charcoal }}>{model.name}</h3>
                   <div className="grid grid-cols-3 gap-2 mb-4 py-3" style={{ borderTop: '1px solid #f0ebe5', borderBottom: '1px solid #f0ebe5' }}>
                     {Object.entries(model.specs).slice(0, 6).map(([k, v]) => (
@@ -266,7 +269,10 @@ export default function Home() {
             </div>
             <div className="p-6">
               <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: COLORS.primary }}>{specCart.type}</p>
-              <h3 className="text-xl font-bold mb-4" style={{ color: COLORS.charcoal }}>{specCart.name}</h3>
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-xl font-bold" style={{ color: COLORS.charcoal }}>{specCart.name}</h3>
+                {specCart.price && <span className="text-lg font-bold" style={{ color: COLORS.primary }}>{specCart.price}</span>}
+              </div>
               <h4 className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: COLORS.primary }}>Specifications</h4>
               {Object.entries(specCart.specs).map(([k, v]) => (
                 <div key={k} className="flex py-2" style={{ borderBottom: '1px solid #f0ebe5' }}>
