@@ -66,7 +66,7 @@ export default function Models() {
                     <span className="text-4xl font-extrabold uppercase tracking-tight" style={{ color: 'rgba(0,0,0,0.04)' }}>{model.name}</span>
                   </div>
                   {model.badge && (
-                    <div className="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded"
+                    <div className="absolute top-3 left-3 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded"
                          style={{ background: COLORS.primary, color: '#fff' }}>
                       {model.badge}
                     </div>
@@ -78,20 +78,20 @@ export default function Models() {
                   <div className="grid grid-cols-3 gap-2 mb-4 py-3" style={{ borderTop: '1px solid #f0ebe5', borderBottom: '1px solid #f0ebe5' }}>
                     {Object.entries(model.specs).slice(0, 6).map(([k, v]) => (
                       <div key={k}>
-                        <div className="text-[10px] uppercase tracking-wider mb-0.5" style={{ color: 'rgba(0,0,0,0.3)' }}>{k}</div>
+                        <div className="text-xs uppercase tracking-wider mb-0.5" style={{ color: 'rgba(0,0,0,0.3)' }}>{k}</div>
                         <div className="text-xs font-medium" style={{ color: COLORS.charcoal }}>{v}</div>
                       </div>
                     ))}
                   </div>
                   <div className="flex flex-wrap gap-1.5 mb-4">
                     {model.features.slice(0, 3).map(f => (
-                      <span key={f} className="text-[11px] px-2 py-0.5 rounded"
+                      <span key={f} className="text-xs px-2 py-0.5 rounded"
                             style={{ background: `${COLORS.primary}08`, color: COLORS.charcoal + '88', border: `1px solid ${COLORS.primary}15` }}>
                         {f}
                       </span>
                     ))}
                     {model.features.length > 3 && (
-                      <span className="text-[11px] px-2 py-0.5" style={{ color: 'rgba(0,0,0,0.25)' }}>+{model.features.length - 3} more</span>
+                      <span className="text-xs px-2 py-0.5" style={{ color: 'rgba(0,0,0,0.25)' }}>+{model.features.length - 3} more</span>
                     )}
                   </div>
                   <button onClick={() => setSpecCart(model)}
@@ -141,7 +141,7 @@ export default function Models() {
                 <span className="text-5xl font-extrabold uppercase tracking-tight" style={{ color: 'rgba(0,0,0,0.04)' }}>{specCart.name}</span>
               </div>
               {specCart.badge && (
-                <div className="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded"
+                <div className="absolute top-3 left-3 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded"
                      style={{ background: COLORS.primary, color: '#fff' }}>{specCart.badge}</div>
               )}
               <button onClick={() => setSpecCart(null)} className="absolute top-3 right-3 w-8 h-8 flex items-center justify-center text-lg rounded-full cursor-pointer"

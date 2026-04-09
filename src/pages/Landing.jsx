@@ -94,7 +94,7 @@ export default function Landing() {
                   <div key={t.label} className="text-center rounded-lg px-4 py-3"
                        style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}>
                     <div className="text-2xl font-extrabold text-white">{String(t.val).padStart(2, '0')}</div>
-                    <div className="text-[10px] uppercase tracking-wider text-white/30 mt-0.5">{t.label}</div>
+                    <div className="text-xs uppercase tracking-wider text-white/30 mt-0.5">{t.label}</div>
                   </div>
                 ))}
               </div>
@@ -111,7 +111,7 @@ export default function Landing() {
                   </div>
                   <div>
                     <div className="text-xs font-bold text-white">{badge.label}</div>
-                    <div className="text-[10px] text-white/35">{badge.sub}</div>
+                    <div className="text-xs text-white/35">{badge.sub}</div>
                   </div>
                 </div>
               ))}
@@ -137,7 +137,7 @@ export default function Landing() {
             <div className="rounded-xl p-8 sticky top-8"
                  style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
               <div className="text-center mb-6">
-                <div className="inline-block px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider mb-4"
+                <div className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4"
                      style={{ background: COLORS.primary, color: '#fff' }}>
                   Free &mdash; No Obligation
                 </div>
@@ -168,7 +168,7 @@ export default function Landing() {
           <p className="text-xs text-white/20">
             &copy; {new Date().getFullYear()} {DEALER.name} &bull; {DEALER.address}, {DEALER.city}, {DEALER.state} {DEALER.zip}
           </p>
-          <a href="/privacy" className="text-[11px] text-white/15 hover:text-white/30 transition mt-1 inline-block">Privacy Policy</a>
+          <a href="/privacy" className="text-xs text-white/15 hover:text-white/30 transition mt-1 inline-block">Privacy Policy</a>
         </div>
       </div>
     </div>

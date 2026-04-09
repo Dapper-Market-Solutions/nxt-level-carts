@@ -41,7 +41,7 @@ export const MODELS = [
     name: 'ICON i40',
     type: '4-Passenger',
     badge: 'Best Seller',
-    image: '',
+    image: '/images/icon-i60lx-white.jpg',
     seats: 4,
     category: '4-Seat',
     specs: {
@@ -66,7 +66,7 @@ export const MODELS = [
     name: 'ICON i60',
     type: '6-Passenger',
     badge: 'Family',
-    image: '',
+    image: '/images/icon-i60lx-black.jpg',
     seats: 6,
     category: '6-Seat',
     specs: {
@@ -91,7 +91,7 @@ export const MODELS = [
     name: 'ICON FX Series',
     type: 'Award-Winning Performance',
     badge: 'PGA Show Winner',
-    image: '',
+    image: '/images/epic-fx-1.jpg',
     seats: 4,
     category: '4-Seat',
     specs: {
@@ -116,7 +116,7 @@ export const MODELS = [
     name: 'ICON Epic',
     type: 'Premium Luxury',
     badge: 'Flagship',
-    image: '',
+    image: '/images/epic-fx-2.jpg',
     seats: 4,
     category: '4-Seat',
     specs: {
@@ -141,7 +141,7 @@ export const MODELS = [
     name: 'ICON i20',
     type: '2-Passenger Compact',
     badge: 'Nimble',
-    image: '',
+    image: '/images/icon-x-1.jpg',
     seats: 2,
     category: '2-Seat',
     specs: {
@@ -166,7 +166,7 @@ export const MODELS = [
     name: 'ICON Lifted',
     type: '4-Passenger Off-Road',
     badge: 'Adventure',
-    image: '',
+    image: '/images/icon-x-2.jpg',
     seats: 4,
     category: '4-Seat',
     specs: {
