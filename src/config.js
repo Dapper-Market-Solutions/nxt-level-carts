@@ -128,7 +128,7 @@ export const MODELS = [
     type: '6-Passenger Lifted Electric',
     badge: 'Family',
     price: '$15,999',
-    image: '/images/icon-i60lx-main.jpg',
+    image: '/images/epic-fx-3.jpg',
     seats: 6,
     category: '6-Seat',
     specs: {
