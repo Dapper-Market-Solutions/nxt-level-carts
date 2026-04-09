@@ -20,7 +20,7 @@ export const DEALER = {
   ],
   social: {
     facebook: '',
-    instagram: '',
+    instagram: 'https://www.instagram.com/next.level.carts/',
     youtube: '',
   },
   webhookUrl: 'https://n8n.dmsdata.io/webhook/nxt-level-carts-lead',
