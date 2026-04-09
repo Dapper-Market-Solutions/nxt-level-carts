@@ -79,7 +79,7 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-sm leading-relaxed" style={{ color: COLORS.charcoal + 'aa' }}>
                 <p>
-                  NXT Level Carts was founded right here in Belleville, Michigan, with a simple belief: personal electric vehicles should be as refined, reliable, and exciting as the people who drive them.
+                  {DEALER.name} was founded right here in {DEALER.city}, {DEALER.state}, with a simple belief: personal electric vehicles should be as refined, reliable, and exciting as the people who drive them.
                 </p>
                 <p>
                   What started as a passion for electric vehicles quickly evolved into a mission. After researching every brand on the market, we chose to partner exclusively with ICON Electric Vehicles — the most awarded golf cart manufacturer in the industry. Their PGA Show-winning designs, cutting-edge technology, and uncompromising build quality aligned perfectly with our vision.
@@ -95,7 +95,7 @@ export default function About() {
             <div className="reveal delay-200 rounded-xl overflow-hidden aspect-[4/3]" style={{ background: '#e8e3de' }}>
               <div className="w-full h-full flex items-center justify-center">
                 <div className="text-center">
-                  <span className="text-6xl font-extrabold uppercase tracking-tight" style={{ color: 'rgba(0,0,0,0.04)' }}>NXT Level</span>
+                  <span className="text-6xl font-extrabold uppercase tracking-tight" style={{ color: 'rgba(0,0,0,0.04)' }}>{DEALER.name}</span>
                   <p className="text-xs uppercase tracking-widest mt-3" style={{ color: COLORS.primary + '66' }}>Belleville, Michigan</p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function About() {
           <div className="reveal mb-12">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.primary }}>The Team</p>
             <h2 className="text-3xl md:text-4xl font-extrabold" style={{ color: COLORS.charcoal }}>
-              Meet the People Behind <span style={{ color: COLORS.primary }}>NXT Level</span>
+              Meet the People Behind <span style={{ color: COLORS.primary }}>{DEALER.name}</span>
             </h2>
           </div>
           <div className="max-w-sm mx-auto reveal">
@@ -126,7 +126,7 @@ export default function About() {
                 <h3 className="text-xl font-bold mb-1" style={{ color: COLORS.charcoal }}>Andrew Jones</h3>
                 <p className="text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: COLORS.primary }}>Owner</p>
                 <p className="text-sm leading-relaxed" style={{ color: COLORS.charcoal + 'aa' }}>
-                  Andrew founded NXT Level Carts with a hands-on approach to customer service and a deep knowledge of electric vehicles. He personally ensures every customer finds the right cart for their needs.
+                  Andrew founded {DEALER.name} with a hands-on approach to customer service and a deep knowledge of electric vehicles. He personally ensures every customer finds the right cart for their needs.
                 </p>
               </div>
             </div>
@@ -164,7 +164,7 @@ export default function About() {
         <div className="max-w-3xl mx-auto text-center reveal">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-4" style={{ color: COLORS.primary }}>Come See Us</p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-            Experience the NXT Level Difference
+            Experience the Difference
           </h2>
           <p className="text-white/50 leading-relaxed mb-10 max-w-lg mx-auto">
             Visit our showroom in {DEALER.city}, {DEALER.state} to see our full lineup of ICON electric golf carts in person. Test drives are always welcome.

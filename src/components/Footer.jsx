@@ -9,10 +9,10 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="text-lg font-bold tracking-wide text-white uppercase mb-4">
-              <span style={{ color: COLORS.primary }}>NXT</span> Level Carts
+              {DEALER.name}
             </div>
             <p className="text-white/40 text-sm leading-relaxed mb-4 max-w-xs">
-              Award-winning ICON electric golf carts. Experience the NXT Level of personal transportation in Belleville, Michigan.
+              Award-winning ICON electric golf carts. Experience the next level of personal transportation in {DEALER.city}, {DEALER.state}.
             </p>
             <p className="text-white/30 text-xs mb-4">{DEALER.tagline}</p>
             {/* Social links */}

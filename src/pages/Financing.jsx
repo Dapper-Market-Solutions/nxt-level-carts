@@ -22,7 +22,7 @@ const STEPS = [
   {
     num: '04',
     title: 'Drive Home',
-    desc: 'Sign the paperwork, grab the keys, and take your new ICON golf cart home. It is that simple. Welcome to the NXT Level.',
+    desc: `Sign the paperwork, grab the keys, and take your new ICON golf cart home. It is that simple. Welcome to ${DEALER.name}.`,
   },
 ]
 

@@ -103,7 +103,7 @@ export default function Contact() {
               {/* Map */}
               <div className="rounded-xl overflow-hidden shadow-sm" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
                 <iframe
-                  title="NXT Level Carts Location"
+                  title={`${DEALER.name} Location`}
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.5!2d-83.4855!3d42.2004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b3a0e0b0b0b0b%3A0x0!2s574+W+Columbia+Ave%2C+Belleville%2C+MI+48111!5e0!3m2!1sen!2sus!4v1700000000000"
                   width="100%"
                   height="280"
