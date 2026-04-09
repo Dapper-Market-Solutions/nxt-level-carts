@@ -238,7 +238,7 @@ export const MODELS = [
     type: '4-Passenger Gas Lifted',
     badge: 'Gas Powered',
     price: '$12,150',
-    image: '/images/icon-i60lx-main.jpg',
+    image: '/images/icon-i60lx-white.jpg',
     seats: 4,
     category: '4-Seat',
     specs: {
