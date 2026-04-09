@@ -2,9 +2,9 @@
 // Change these values to customize the site for any golf cart dealer
 
 export const DEALER = {
-  name: 'NXT Level Carts',
+  name: 'NEXT Level Carts',
   tagline: 'Premium Electric Golf Carts',
-  slogan: 'Take It to the NXT Level.',
+  slogan: 'Take It to the NEXT Level.',
   phone: '',
   email: 'ajones@nxtlevelcarts.com',
   address: '574 W Columbia Ave',
@@ -268,7 +268,7 @@ export const TESTIMONIALS = [
     name: 'Mike R.',
     location: 'Canton, MI',
     stars: 5,
-    text: "Best golf cart buying experience I've ever had. The ICON FX Series is incredible — feels like driving a luxury vehicle. The team at NXT Level made it easy from start to finish.",
+    text: "Best golf cart buying experience I've ever had. The ICON FX Series is incredible — feels like driving a luxury vehicle. The team at NEXT Level made it easy from start to finish.",
   },
   {
     name: 'Sarah & Tom L.',
@@ -280,7 +280,7 @@ export const TESTIMONIALS = [
     name: 'Dave K.',
     location: 'Belleville, MI',
     stars: 5,
-    text: 'Third cart from NXT Level. The quality keeps getting better. The lifted ICON handles our property like a champ. Andrew and the team always take care of us.',
+    text: 'Third cart from NEXT Level. The quality keeps getting better. The lifted ICON handles our property like a champ. Andrew and the team always take care of us.',
   },
   {
     name: 'Jennifer P.',
