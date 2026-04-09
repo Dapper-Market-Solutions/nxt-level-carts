@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.nxtlevelcarts.com/sitemap.xml
+
+Disallow: /api/
