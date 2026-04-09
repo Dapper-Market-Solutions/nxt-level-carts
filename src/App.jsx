@@ -28,13 +28,18 @@ function PageWrapper({ children }) {
         el.classList.remove('visible')
         observer.observe(el)
       })
+      // Double rAF ensures DOM is fully painted before checking visibility
       requestAnimationFrame(() => {
-        document.querySelectorAll('.reveal').forEach(el => {
-          const rect = el.getBoundingClientRect()
-          if (rect.top < window.innerHeight && rect.bottom > 0) el.classList.add('visible')
+        requestAnimationFrame(() => {
+          document.querySelectorAll('.reveal').forEach(el => {
+            const rect = el.getBoundingClientRect()
+            if (rect.top < window.innerHeight + 100 && rect.bottom > -100) {
+              el.classList.add('visible')
+            }
+          })
         })
       })
-    }, 30)
+    }, 50)
     return () => { clearTimeout(timer); observer.disconnect() }
   }, [pathname])
   return children
