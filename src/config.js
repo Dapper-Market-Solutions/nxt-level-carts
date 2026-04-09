@@ -128,7 +128,7 @@ export const MODELS = [
     type: '6-Passenger Lifted Electric',
     badge: 'Family',
     price: '$15,999',
-    image: '/images/icon-i60lx-black.jpg',
+    image: '/images/1775741581777-9-25-aqua-rover-xl-3.jpg',
     seats: 6,
     category: '6-Seat',
     specs: {
