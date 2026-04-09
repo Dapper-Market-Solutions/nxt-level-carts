@@ -59,8 +59,8 @@ export default function Models() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((model, i) => (
-              <div key={model.name} className="reveal bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                   style={{ transitionDelay: `${i * 80}ms` }}>
+              <div key={model.name} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                   style={{ animation: `fadeUp 0.5s ease forwards ${i * 80}ms`, opacity: 0 }}>
                 <div className="relative aspect-[16/10]" style={{ background: '#f0ebe5' }}>
                   <div className="w-full h-full flex items-center justify-center">
                     <span className="text-4xl font-extrabold uppercase tracking-tight" style={{ color: 'rgba(0,0,0,0.04)' }}>{model.name}</span>
