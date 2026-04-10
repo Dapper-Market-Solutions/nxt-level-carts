@@ -13,7 +13,7 @@ export const DEALER = {
   zip: '48111',
   hours: [
     { days: 'Monday', hours: '10:00 AM – 4:00 PM' },
-    { days: 'Tuesday – Wednesday', hours: '9:30 AM – 4:30 PM' },
+    { days: 'Tuesday – Wednesday', hours: '10:00 AM – 6:00 PM' },
     { days: 'Thursday', hours: '10:00 AM – 4:00 PM' },
     { days: 'Friday', hours: '10:00 AM – 3:00 PM' },
     { days: 'Saturday – Sunday', hours: 'Closed' },
