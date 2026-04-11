@@ -82,9 +82,9 @@ export default function Financing() {
       <section className="py-20 px-6" style={{ background: COLORS.cream }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14 reveal">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.primary }}>Why Finance With Us</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.accent }}>Why Finance With Us</p>
             <h2 className="text-3xl md:text-4xl font-extrabold" style={{ color: COLORS.charcoal }}>
-              Getting Your Cart Should Be <span style={{ color: COLORS.primary }}>Simple</span>
+              Getting Your Cart Should Be <span style={{ color: COLORS.accent }}>Simple</span>
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
@@ -93,7 +93,7 @@ export default function Financing() {
                    style={{ transitionDelay: `${i * 80}ms` }}>
                 <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mt-0.5"
                      style={{ background: COLORS.primary + '12' }}>
-                  <span className="text-sm font-bold" style={{ color: COLORS.primary }}>&#10003;</span>
+                  <span className="text-sm font-bold" style={{ color: COLORS.accent }}>&#10003;</span>
                 </div>
                 <p className="text-sm leading-relaxed" style={{ color: COLORS.charcoal }}>{f}</p>
               </div>
@@ -106,7 +106,7 @@ export default function Financing() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14 reveal">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.primary }}>How It Works</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.accent }}>How It Works</p>
             <h2 className="text-3xl md:text-4xl font-extrabold" style={{ color: COLORS.charcoal }}>
               Four Simple Steps
             </h2>
@@ -114,11 +114,11 @@ export default function Financing() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {STEPS.map((step, i) => (
               <div key={step.num} className="reveal text-center" style={{ transitionDelay: `${i * 100}ms` }}>
-                <div className="text-5xl font-extrabold mb-4" style={{ color: COLORS.primary + '18' }}>{step.num}</div>
+                <div className="text-5xl font-extrabold mb-4" style={{ color: COLORS.accent + '18' }}>{step.num}</div>
                 <h3 className="text-lg font-bold mb-2" style={{ color: COLORS.charcoal }}>{step.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: COLORS.charcoal + 'aa' }}>{step.desc}</p>
                 {i < STEPS.length - 1 && (
-                  <div className="hidden lg:block absolute top-8 -right-4 text-2xl" style={{ color: COLORS.primary + '30' }}>&rarr;</div>
+                  <div className="hidden lg:block absolute top-8 -right-4 text-2xl" style={{ color: COLORS.accent + '30' }}>&rarr;</div>
                 )}
               </div>
             ))}
@@ -130,7 +130,7 @@ export default function Financing() {
       <section className="py-20 px-6" style={{ background: COLORS.cream }}>
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-14 reveal">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.primary }}>FAQ</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.accent }}>FAQ</p>
             <h2 className="text-3xl md:text-4xl font-extrabold" style={{ color: COLORS.charcoal }}>
               Common Questions
             </h2>
@@ -144,7 +144,7 @@ export default function Financing() {
                   <span className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold transition-transform"
                         style={{
                           background: openFaq === i ? COLORS.primary : COLORS.primary + '12',
-                          color: openFaq === i ? '#000' : COLORS.primary,
+                          color: openFaq === i ? '#000' : COLORS.accent,
                           transform: openFaq === i ? 'rotate(45deg)' : 'rotate(0deg)',
                         }}>
                     +
@@ -165,7 +165,7 @@ export default function Financing() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="reveal">
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-4" style={{ color: COLORS.primary }}>Get Started</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-4" style={{ color: COLORS.accent }}>Get Started</p>
               <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
                 Ready to Make It Happen?
               </h2>
@@ -175,7 +175,7 @@ export default function Financing() {
               <ul className="space-y-3">
                 {['Quick same-day approvals', 'Multiple lender options', 'Trade-ins welcome', 'No prepayment penalties'].map((f, i) => (
                   <li key={i} className="flex items-center gap-3 text-white/60 text-sm">
-                    <span className="font-bold" style={{ color: COLORS.primary }}>&#10003;</span>
+                    <span className="font-bold" style={{ color: COLORS.accent }}>&#10003;</span>
                     {f}
                   </li>
                 ))}

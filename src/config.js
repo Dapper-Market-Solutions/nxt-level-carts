@@ -31,6 +31,7 @@ export const COLORS = {
   primaryDark: '#cc9f04',
   primaryLight: '#ffe135',
   primaryText: '#000',
+  accent: '#8B6300',
   dark: '#3a3939',
   charcoal: '#5a5959',
   cream: '#f5f0eb',

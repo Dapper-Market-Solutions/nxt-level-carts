@@ -77,7 +77,7 @@ export default function Models() {
                   )}
                 </div>
                 <div className="p-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: COLORS.primary }}>{model.type}</p>
+                  <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: COLORS.accent }}>{model.type}</p>
                   <h3 className="text-lg font-bold mb-3" style={{ color: COLORS.charcoal }}>{model.name}</h3>
                   <div className="grid grid-cols-3 gap-2 mb-4 py-3" style={{ borderTop: '1px solid #f0ebe5', borderBottom: '1px solid #f0ebe5' }}>
                     {Object.entries(model.specs).slice(0, 6).map(([k, v]) => (
@@ -100,9 +100,9 @@ export default function Models() {
                   </div>
                   <button onClick={() => setSpecCart(model)}
                     className="w-full py-3 text-center text-sm font-semibold uppercase tracking-wider transition cursor-pointer"
-                    style={{ background: 'transparent', color: COLORS.primary, border: `1px solid ${COLORS.primary}` }}
-                    onMouseEnter={e => { e.target.style.background = COLORS.primary; e.target.style.color = '#000' }}
-                    onMouseLeave={e => { e.target.style.background = 'transparent'; e.target.style.color = COLORS.primary }}>
+                    style={{ background: 'transparent', color: COLORS.accent, border: `1px solid ${COLORS.accent}` }}
+                    onMouseEnter={e => { e.target.style.background = COLORS.accent; e.target.style.color = '#000' }}
+                    onMouseLeave={e => { e.target.style.background = 'transparent'; e.target.style.color = COLORS.accent }}>
                     View Details
                   </button>
                 </div>
@@ -115,7 +115,7 @@ export default function Models() {
       {/* CTA */}
       <section className="py-20 px-6" style={{ background: COLORS.dark }}>
         <div className="max-w-3xl mx-auto text-center reveal">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-4" style={{ color: COLORS.primary }}>Ready to Ride?</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-4" style={{ color: COLORS.accent }}>Ready to Ride?</p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
             Find Your Perfect ICON Cart
           </h2>
@@ -152,22 +152,22 @@ export default function Models() {
                       style={{ background: 'rgba(0,0,0,0.5)', color: '#fff' }}>&times;</button>
             </div>
             <div className="p-6">
-              <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: COLORS.primary }}>{specCart.type}</p>
+              <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: COLORS.accent }}>{specCart.type}</p>
               <h3 className="text-xl font-bold mb-4" style={{ color: COLORS.charcoal }}>{specCart.name}</h3>
-              <h4 className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: COLORS.primary }}>Specifications</h4>
+              <h4 className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: COLORS.accent }}>Specifications</h4>
               {Object.entries(specCart.specs).map(([k, v]) => (
                 <div key={k} className="flex py-2" style={{ borderBottom: '1px solid #f0ebe5' }}>
                   <span className="w-28 text-xs uppercase tracking-wider" style={{ color: 'rgba(0,0,0,0.3)' }}>{k}</span>
                   <span className="text-sm font-medium" style={{ color: COLORS.charcoal }}>{v}</span>
                 </div>
               ))}
-              <h4 className="text-xs font-bold uppercase tracking-wider mt-5 mb-3" style={{ color: COLORS.primary }}>Available Colors</h4>
+              <h4 className="text-xs font-bold uppercase tracking-wider mt-5 mb-3" style={{ color: COLORS.accent }}>Available Colors</h4>
               <div className="flex flex-wrap gap-2 mb-5">
                 {specCart.colors.map(c => (
                   <span key={c} className="text-xs px-3 py-1 rounded" style={{ background: '#f0ebe5', color: COLORS.charcoal }}>{c}</span>
                 ))}
               </div>
-              <h4 className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: COLORS.primary }}>Features</h4>
+              <h4 className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: COLORS.accent }}>Features</h4>
               <div className="flex flex-wrap gap-2 mb-6">
                 {specCart.features.map(f => (
                   <span key={f} className="text-xs px-3 py-1.5 rounded" style={{ background: `${COLORS.primary}08`, color: COLORS.charcoal + 'aa', border: `1px solid ${COLORS.primary}15` }}>{f}</span>

@@ -36,7 +36,7 @@ export default function LeadForm({ source = 'website', compact = false, dark = f
   if (done) {
     return (
       <div className="text-center py-10">
-        <div className="text-5xl mb-4" style={{ color: COLORS.primary }}>✓</div>
+        <div className="text-5xl mb-4" style={{ color: COLORS.accent }}>✓</div>
         <h3 className={`text-xl font-bold mb-2 ${dark ? 'text-white' : ''}`} style={{ color: dark ? '#fff' : COLORS.charcoal }}>We Got Your Info!</h3>
         <p className={`text-sm ${dark ? 'text-white/50' : 'text-gray-500'}`}>A member of our team will reach out shortly.</p>
       </div>
@@ -49,18 +49,18 @@ export default function LeadForm({ source = 'website', compact = false, dark = f
         <input type="text" name="name" required placeholder="Your Name *" value={form.name}
           onChange={e => setForm({ ...form, name: e.target.value })}
           className={inputClass} style={inputStyle}
-          onFocus={e => e.target.style.borderColor = COLORS.primary}
+          onFocus={e => e.target.style.borderColor = COLORS.accent}
           onBlur={e => e.target.style.borderColor = dark ? 'rgba(255,255,255,0.1)' : '#d1d5db'} />
         <input type="tel" name="phone" required placeholder="Phone Number *" value={form.phone}
           onChange={e => setForm({ ...form, phone: e.target.value })}
           className={inputClass} style={inputStyle}
-          onFocus={e => e.target.style.borderColor = COLORS.primary}
+          onFocus={e => e.target.style.borderColor = COLORS.accent}
           onBlur={e => e.target.style.borderColor = dark ? 'rgba(255,255,255,0.1)' : '#d1d5db'} />
       </div>
       <input type="email" name="email" required placeholder="Email Address *" value={form.email}
         onChange={e => setForm({ ...form, email: e.target.value })}
         className={inputClass} style={inputStyle}
-        onFocus={e => e.target.style.borderColor = COLORS.primary}
+        onFocus={e => e.target.style.borderColor = COLORS.accent}
         onBlur={e => e.target.style.borderColor = dark ? 'rgba(255,255,255,0.1)' : '#d1d5db'} />
       {showModel && (
         <select value={form.model} onChange={e => setForm({ ...form, model: e.target.value })}

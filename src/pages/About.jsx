@@ -59,7 +59,7 @@ export default function About() {
           </p>
           <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4"
               style={{ animation: 'fadeUp 0.7s ease forwards 0.3s', opacity: 0 }}>
-            About <span style={{ color: COLORS.primary }}>{DEALER.name}</span>
+            About <span style={{ color: COLORS.accent }}>{DEALER.name}</span>
           </h1>
           <p className="text-lg text-white/50 max-w-xl mx-auto"
              style={{ animation: 'fadeUp 0.7s ease forwards 0.5s', opacity: 0 }}>
@@ -73,7 +73,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="reveal">
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-4" style={{ color: COLORS.primary }}>How We Started</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-4" style={{ color: COLORS.accent }}>How We Started</p>
               <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: COLORS.charcoal }}>
                 Born in Belleville, Built on Passion
               </h2>
@@ -96,7 +96,7 @@ export default function About() {
               <div className="w-full h-full flex items-center justify-center">
                 <div className="text-center">
                   <span className="text-6xl font-extrabold uppercase tracking-tight" style={{ color: 'rgba(0,0,0,0.04)' }}>{DEALER.name}</span>
-                  <p className="text-xs uppercase tracking-widest mt-3" style={{ color: COLORS.primary + '66' }}>Belleville, Michigan</p>
+                  <p className="text-xs uppercase tracking-widest mt-3" style={{ color: COLORS.accent + '66' }}>Belleville, Michigan</p>
                 </div>
               </div>
             </div>
@@ -108,9 +108,9 @@ export default function About() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto text-center">
           <div className="reveal mb-12">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.primary }}>The Team</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.accent }}>The Team</p>
             <h2 className="text-3xl md:text-4xl font-extrabold" style={{ color: COLORS.charcoal }}>
-              Meet the People Behind <span style={{ color: COLORS.primary }}>{DEALER.name}</span>
+              Meet the People Behind <span style={{ color: COLORS.accent }}>{DEALER.name}</span>
             </h2>
           </div>
           <div className="max-w-sm mx-auto reveal">
@@ -118,13 +118,13 @@ export default function About() {
               <div className="aspect-square" style={{ background: '#e8e3de' }}>
                 <div className="w-full h-full flex items-center justify-center">
                   <div className="w-24 h-24 rounded-full flex items-center justify-center" style={{ background: COLORS.primary + '15' }}>
-                    <span className="text-3xl font-extrabold" style={{ color: COLORS.primary }}>AJ</span>
+                    <span className="text-3xl font-extrabold" style={{ color: COLORS.accent }}>AJ</span>
                   </div>
                 </div>
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-xl font-bold mb-1" style={{ color: COLORS.charcoal }}>Andrew Jones</h3>
-                <p className="text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: COLORS.primary }}>Owner</p>
+                <p className="text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: COLORS.accent }}>Owner</p>
                 <p className="text-sm leading-relaxed" style={{ color: COLORS.charcoal + 'aa' }}>
                   Andrew founded {DEALER.name} with a hands-on approach to customer service and a deep knowledge of electric vehicles. He personally ensures every customer finds the right cart for their needs.
                 </p>
@@ -138,7 +138,7 @@ export default function About() {
       <section className="py-20 px-6" style={{ background: COLORS.cream }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14 reveal">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.primary }}>What Drives Us</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.accent }}>What Drives Us</p>
             <h2 className="text-3xl md:text-4xl font-extrabold" style={{ color: COLORS.charcoal }}>
               Our Core Values
             </h2>
@@ -148,7 +148,7 @@ export default function About() {
               <div key={v.title} className="reveal rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-shadow"
                    style={{ transitionDelay: `${i * 80}ms` }}>
                 <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-                     style={{ background: COLORS.primary + '12', color: COLORS.primary }}>
+                     style={{ background: COLORS.primary + '12', color: COLORS.accent }}>
                   {v.icon}
                 </div>
                 <h3 className="text-lg font-bold mb-2" style={{ color: COLORS.charcoal }}>{v.title}</h3>
@@ -162,7 +162,7 @@ export default function About() {
       {/* CTA */}
       <section className="py-20 px-6" style={{ background: COLORS.dark }}>
         <div className="max-w-3xl mx-auto text-center reveal">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-4" style={{ color: COLORS.primary }}>Come See Us</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-4" style={{ color: COLORS.accent }}>Come See Us</p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
             Experience the Difference
           </h2>

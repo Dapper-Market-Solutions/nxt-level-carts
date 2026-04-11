@@ -88,9 +88,9 @@ export default function Home() {
       <section id="models" className="py-20 px-6" style={{ background: COLORS.cream }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 reveal">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.primary }}>The Collection</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.accent }}>The Collection</p>
             <h2 className="text-3xl md:text-5xl font-extrabold" style={{ color: COLORS.charcoal }}>
-              Find Your <span style={{ color: COLORS.primary }}>Perfect Cart</span>
+              Find Your <span style={{ color: COLORS.accent }}>Perfect Cart</span>
             </h2>
           </div>
 
@@ -129,8 +129,8 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-1">
-                    <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: COLORS.primary }}>{model.type}</p>
-                    {model.price && <span className="text-sm font-bold" style={{ color: COLORS.primary }}>{model.price}</span>}
+                    <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: COLORS.accent }}>{model.type}</p>
+                    {model.price && <span className="text-sm font-bold" style={{ color: COLORS.accent }}>{model.price}</span>}
                   </div>
                   <h3 className="text-lg font-bold mb-3" style={{ color: COLORS.charcoal }}>{model.name}</h3>
                   <div className="grid grid-cols-3 gap-2 mb-4 py-3" style={{ borderTop: '1px solid #f0ebe5', borderBottom: '1px solid #f0ebe5' }}>
@@ -154,9 +154,9 @@ export default function Home() {
                   </div>
                   <button onClick={() => setSpecCart(model)}
                     className="w-full py-3 text-center text-sm font-semibold uppercase tracking-wider transition cursor-pointer"
-                    style={{ background: 'transparent', color: COLORS.primary, border: `1px solid ${COLORS.primary}` }}
-                    onMouseEnter={e => { e.target.style.background = COLORS.primary; e.target.style.color = '#000' }}
-                    onMouseLeave={e => { e.target.style.background = 'transparent'; e.target.style.color = COLORS.primary }}>
+                    style={{ background: 'transparent', color: COLORS.accent, border: `1px solid ${COLORS.accent}` }}
+                    onMouseEnter={e => { e.target.style.background = COLORS.accent; e.target.style.color = '#000' }}
+                    onMouseLeave={e => { e.target.style.background = 'transparent'; e.target.style.color = COLORS.accent }}>
                     View Details
                   </button>
                 </div>
@@ -165,7 +165,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-10">
-            <Link to="/models" className="text-sm font-semibold uppercase tracking-wider hover:opacity-80 transition" style={{ color: COLORS.primary }}>
+            <Link to="/models" className="text-sm font-semibold uppercase tracking-wider hover:opacity-80 transition" style={{ color: COLORS.accent }}>
               View All Models &rarr;
             </Link>
           </div>
@@ -176,7 +176,7 @@ export default function Home() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 reveal">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.primary }}>Happy Owners</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.accent }}>Happy Owners</p>
             <h2 className="text-3xl md:text-4xl font-extrabold" style={{ color: COLORS.charcoal }}>
               What Our Customers Say
             </h2>
@@ -186,7 +186,7 @@ export default function Home() {
               <div key={i} className="reveal rounded-xl p-6 shadow-sm" style={{ background: COLORS.cream, transitionDelay: `${i * 80}ms` }}>
                 <div className="flex gap-0.5 mb-3">
                   {Array(t.stars).fill(0).map((_, j) => (
-                    <span key={j} style={{ color: COLORS.primary }}>&#9733;</span>
+                    <span key={j} style={{ color: COLORS.accent }}>&#9733;</span>
                   ))}
                 </div>
                 <p className="text-sm leading-relaxed mb-4" style={{ color: COLORS.charcoal + 'aa' }}>"{t.text}"</p>
@@ -233,7 +233,7 @@ export default function Home() {
       {/* Map / Location */}
       <section className="py-20 px-6" style={{ background: COLORS.cream }}>
         <div className="max-w-7xl mx-auto text-center reveal">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.primary }}>Visit Our Showroom</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.accent }}>Visit Our Showroom</p>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: COLORS.charcoal }}>
             {DEALER.address}, {DEALER.city}, {DEALER.state} {DEALER.zip}
           </h2>
@@ -269,25 +269,25 @@ export default function Home() {
                       style={{ background: 'rgba(0,0,0,0.5)', color: '#fff' }}>&times;</button>
             </div>
             <div className="p-6">
-              <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: COLORS.primary }}>{specCart.type}</p>
+              <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: COLORS.accent }}>{specCart.type}</p>
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-xl font-bold" style={{ color: COLORS.charcoal }}>{specCart.name}</h3>
-                {specCart.price && <span className="text-lg font-bold" style={{ color: COLORS.primary }}>{specCart.price}</span>}
+                {specCart.price && <span className="text-lg font-bold" style={{ color: COLORS.accent }}>{specCart.price}</span>}
               </div>
-              <h4 className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: COLORS.primary }}>Specifications</h4>
+              <h4 className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: COLORS.accent }}>Specifications</h4>
               {Object.entries(specCart.specs).map(([k, v]) => (
                 <div key={k} className="flex py-2" style={{ borderBottom: '1px solid #f0ebe5' }}>
                   <span className="w-28 text-xs uppercase tracking-wider" style={{ color: 'rgba(0,0,0,0.3)' }}>{k}</span>
                   <span className="text-sm font-medium" style={{ color: COLORS.charcoal }}>{v}</span>
                 </div>
               ))}
-              <h4 className="text-xs font-bold uppercase tracking-wider mt-5 mb-3" style={{ color: COLORS.primary }}>Available Colors</h4>
+              <h4 className="text-xs font-bold uppercase tracking-wider mt-5 mb-3" style={{ color: COLORS.accent }}>Available Colors</h4>
               <div className="flex flex-wrap gap-2 mb-5">
                 {specCart.colors.map(c => (
                   <span key={c} className="text-xs px-3 py-1 rounded" style={{ background: '#f0ebe5', color: COLORS.charcoal }}>{c}</span>
                 ))}
               </div>
-              <h4 className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: COLORS.primary }}>Features</h4>
+              <h4 className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: COLORS.accent }}>Features</h4>
               <div className="flex flex-wrap gap-2 mb-6">
                 {specCart.features.map(f => (
                   <span key={f} className="text-xs px-3 py-1.5 rounded" style={{ background: `${COLORS.primary}08`, color: COLORS.charcoal + 'aa', border: `1px solid ${COLORS.primary}15` }}>{f}</span>
