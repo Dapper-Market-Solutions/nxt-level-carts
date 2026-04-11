@@ -35,7 +35,7 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-4" style={{ animation: 'fadeUp 0.7s ease forwards 0.7s', opacity: 0 }}>
               <Link to="/models" className="px-8 py-4 text-sm font-bold uppercase tracking-wider transition-all hover:-translate-y-0.5"
-                    style={{ background: COLORS.primary, color: '#fff' }}>
+                    style={{ background: COLORS.primary, color: '#000' }}>
                 Explore Models
               </Link>
               <Link to="/contact" className="px-8 py-4 text-sm font-medium uppercase tracking-wider transition-all hover:-translate-y-0.5 border-2"
@@ -65,8 +65,8 @@ export default function Home() {
             ['Financing', 'Low Monthly Payments'],
           ].map(([title, sub]) => (
             <div key={title}>
-              <div className="text-sm font-bold text-white uppercase tracking-wider">{title}</div>
-              <div className="text-xs text-white/60 mt-0.5">{sub}</div>
+              <div className="text-sm font-bold text-black uppercase tracking-wider">{title}</div>
+              <div className="text-xs text-black/60 mt-0.5">{sub}</div>
             </div>
           ))}
         </div>
@@ -100,7 +100,7 @@ export default function Home() {
                 className="text-xs font-semibold uppercase tracking-wider px-5 py-2.5 transition cursor-pointer"
                 style={{
                   background: filter === cat ? COLORS.primary : 'transparent',
-                  color: filter === cat ? '#fff' : COLORS.charcoal + '66',
+                  color: filter === cat ? '#000' : COLORS.charcoal + '66',
                   border: filter === cat ? `1px solid ${COLORS.primary}` : '1px solid rgba(0,0,0,0.1)',
                 }}>
                 {cat}
@@ -122,7 +122,7 @@ export default function Home() {
                   )}
                   {model.badge && (
                     <div className="absolute top-3 left-3 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded"
-                         style={{ background: COLORS.primary, color: '#fff' }}>
+                         style={{ background: COLORS.primary, color: '#000' }}>
                       {model.badge}
                     </div>
                   )}
@@ -155,7 +155,7 @@ export default function Home() {
                   <button onClick={() => setSpecCart(model)}
                     className="w-full py-3 text-center text-sm font-semibold uppercase tracking-wider transition cursor-pointer"
                     style={{ background: 'transparent', color: COLORS.primary, border: `1px solid ${COLORS.primary}` }}
-                    onMouseEnter={e => { e.target.style.background = COLORS.primary; e.target.style.color = '#fff' }}
+                    onMouseEnter={e => { e.target.style.background = COLORS.primary; e.target.style.color = '#000' }}
                     onMouseLeave={e => { e.target.style.background = 'transparent'; e.target.style.color = COLORS.primary }}>
                     View Details
                   </button>
@@ -217,7 +217,7 @@ export default function Home() {
                 ))}
               </ul>
               <Link to="/financing" className="inline-block px-8 py-4 text-sm font-bold uppercase tracking-wider transition hover:-translate-y-0.5"
-                    style={{ background: COLORS.primary, color: '#fff' }}>
+                    style={{ background: COLORS.primary, color: '#000' }}>
                 Learn About Financing
               </Link>
             </div>
@@ -246,7 +246,7 @@ export default function Home() {
             ))}
           </div>
           <Link to="/contact" className="inline-block px-8 py-4 text-sm font-bold uppercase tracking-wider transition hover:-translate-y-0.5"
-                style={{ background: COLORS.primary, color: '#fff' }}>
+                style={{ background: COLORS.primary, color: '#000' }}>
             Get Directions &amp; Contact Us
           </Link>
         </div>
@@ -263,7 +263,7 @@ export default function Home() {
               </div>
               {specCart.badge && (
                 <div className="absolute top-3 left-3 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded"
-                     style={{ background: COLORS.primary, color: '#fff' }}>{specCart.badge}</div>
+                     style={{ background: COLORS.primary, color: '#000' }}>{specCart.badge}</div>
               )}
               <button onClick={() => setSpecCart(null)} className="absolute top-3 right-3 w-8 h-8 flex items-center justify-center text-lg rounded-full cursor-pointer"
                       style={{ background: 'rgba(0,0,0,0.5)', color: '#fff' }}>&times;</button>
@@ -295,7 +295,7 @@ export default function Home() {
               </div>
               <Link to="/contact" onClick={() => setSpecCart(null)}
                 className="block w-full py-3.5 text-center text-sm font-bold uppercase tracking-wider transition"
-                style={{ background: COLORS.primary, color: '#fff' }}>
+                style={{ background: COLORS.primary, color: '#000' }}>
                 Inquire About This Model
               </Link>
             </div>

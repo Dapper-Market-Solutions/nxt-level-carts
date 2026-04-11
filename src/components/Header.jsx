@@ -48,7 +48,7 @@ export default function Header() {
           <Link
             to="/contact"
             className="px-5 py-2 text-sm font-bold uppercase tracking-wider transition-all hover:-translate-y-0.5"
-            style={{ background: COLORS.primary, color: '#fff' }}
+            style={{ background: COLORS.primary, color: '#000' }}
           >
             Schedule Test Drive
           </Link>
@@ -72,7 +72,7 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <Link to="/contact" className="block text-center py-3 text-sm font-bold uppercase tracking-wider" style={{ background: COLORS.primary, color: '#fff' }}>
+          <Link to="/contact" className="block text-center py-3 text-sm font-bold uppercase tracking-wider" style={{ background: COLORS.primary, color: '#000' }}>
             Schedule Test Drive
           </Link>
         </div>

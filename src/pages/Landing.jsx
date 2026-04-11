@@ -46,7 +46,7 @@ export default function Landing() {
     <div className="min-h-screen" style={{ background: `linear-gradient(180deg, ${COLORS.dark} 0%, ${COLORS.charcoal} 50%, ${COLORS.dark} 100%)` }}>
       {/* Top bar — urgency */}
       <div className="w-full py-3 text-center" style={{ background: COLORS.primary }}>
-        <p className="text-xs font-bold uppercase tracking-widest text-white">
+        <p className="text-xs font-bold uppercase tracking-widest text-black">
           Limited Time Offer — Ends Soon &bull; Only While Inventory Lasts
         </p>
       </div>
@@ -138,7 +138,7 @@ export default function Landing() {
                  style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
               <div className="text-center mb-6">
                 <div className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4"
-                     style={{ background: COLORS.primary, color: '#fff' }}>
+                     style={{ background: COLORS.primary, color: '#000' }}>
                   Free &mdash; No Obligation
                 </div>
                 <h2 className="text-xl font-bold text-white mb-1">Claim Your Spring Offer</h2>

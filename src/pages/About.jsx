@@ -171,7 +171,7 @@ export default function About() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/contact" className="px-8 py-4 text-sm font-bold uppercase tracking-wider transition hover:-translate-y-0.5"
-                  style={{ background: COLORS.primary, color: '#fff' }}>
+                  style={{ background: COLORS.primary, color: '#000' }}>
               Schedule a Visit
             </Link>
             <Link to="/models" className="px-8 py-4 text-sm font-medium uppercase tracking-wider transition hover:-translate-y-0.5 border-2"

@@ -144,7 +144,7 @@ export default function Financing() {
                   <span className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold transition-transform"
                         style={{
                           background: openFaq === i ? COLORS.primary : COLORS.primary + '12',
-                          color: openFaq === i ? '#fff' : COLORS.primary,
+                          color: openFaq === i ? '#000' : COLORS.primary,
                           transform: openFaq === i ? 'rotate(45deg)' : 'rotate(0deg)',
                         }}>
                     +

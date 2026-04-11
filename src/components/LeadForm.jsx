@@ -72,7 +72,7 @@ export default function LeadForm({ source = 'website', compact = false, dark = f
       )}
       <button type="submit"
         className="w-full py-4 rounded text-sm font-bold uppercase tracking-wider transition-all hover:-translate-y-0.5 cursor-pointer"
-        style={{ background: COLORS.primary, color: '#fff' }}>
+        style={{ background: COLORS.primary, color: '#000' }}>
         {source === 'landing' ? 'Claim My Offer' : 'Schedule My Test Drive'}
       </button>
       <p className={`text-center text-xs leading-relaxed ${dark ? 'text-white/25' : 'text-gray-400'}`}>
