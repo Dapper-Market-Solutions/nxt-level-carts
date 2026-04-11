@@ -123,10 +123,10 @@ export default function About() {
                 </div>
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-xl font-bold mb-1" style={{ color: COLORS.charcoal }}>Andrew Jones</h3>
+                <h3 className="text-xl font-bold mb-1" style={{ color: COLORS.charcoal }}>Alex Jones</h3>
                 <p className="text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: COLORS.accent }}>Owner</p>
                 <p className="text-sm leading-relaxed" style={{ color: COLORS.charcoal + 'aa' }}>
-                  Andrew founded {DEALER.name} with a hands-on approach to customer service and a deep knowledge of electric vehicles. He personally ensures every customer finds the right cart for their needs.
+                  Alex founded {DEALER.name} with a hands-on approach to customer service and a deep knowledge of electric vehicles. She personally ensures every customer finds the right cart for their needs.
                 </p>
               </div>
             </div>

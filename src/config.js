@@ -282,7 +282,7 @@ export const TESTIMONIALS = [
     name: 'Dave K.',
     location: 'Belleville, MI',
     stars: 5,
-    text: 'Third cart from NEXT Level. The quality keeps getting better. The lifted ICON handles our property like a champ. Andrew and the team always take care of us.',
+    text: 'Third cart from NEXT Level. The quality keeps getting better. The lifted ICON handles our property like a champ. Alex and the team always take care of us.',
   },
   {
     name: 'Jennifer P.',
