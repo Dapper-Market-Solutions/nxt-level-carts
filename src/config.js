@@ -19,7 +19,7 @@ export const DEALER = {
     { days: 'Saturday – Sunday', hours: 'Closed' },
   ],
   social: {
-    facebook: '',
+    facebook: 'https://www.facebook.com/profile.php?id=61580448293815',
     instagram: 'https://www.instagram.com/next.level.carts/',
     youtube: '',
   },
