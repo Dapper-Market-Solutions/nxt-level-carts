@@ -14,7 +14,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center" style={{ backgroundImage: 'url(/images/hero-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0" style={{ background: 'rgba(26,25,25,0.75)' }} />
+        <div className="absolute inset-0" style={{ background: 'rgba(26,25,25,0.45)' }} />
         <div className="absolute top-1/3 right-0 w-[600px] h-[600px] rounded-full opacity-[0.06]"
              style={{ background: `radial-gradient(circle, ${COLORS.primary} 0%, transparent 70%)` }} />
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
