@@ -20,7 +20,11 @@ const SECTIONS = [
   },
   {
     title: 'Third-Party Services',
-    content: `We may use third-party services that collect or process data on our behalf, including:\n\n- **Google Maps** — for displaying our location\n- **Analytics platforms** — for website traffic analysis\n- **Form processing services** — for handling lead submissions securely\n\nThese services have their own privacy policies. We encourage you to review them. We only share the minimum information necessary for these services to function.`,
+    content: `We may use third-party services that collect or process data on our behalf, including:\n\n- **Google Maps** — for displaying our location\n- **Google Analytics / Google Tag Manager** — for website traffic analysis and conversion tracking\n- **Form processing services** — for handling lead submissions securely\n- **UserWay** — for accessibility compliance and assistive technology\n\nThese services have their own privacy policies. We encourage you to review them. We only share the minimum information necessary for these services to function.`,
+  },
+  {
+    title: 'DapperIQ Data Services',
+    content: `This website is built and managed by **Dapper Market Solutions** ("DMS") using the **DapperIQ** platform. DMS may process certain data on behalf of ${DEALER.name} to support website operations, lead management, and analytics.\n\n- **Data processed by DMS** includes form submissions (name, email, phone, model interest), website analytics, and campaign attribution data.\n- **Purpose** — DMS processes this data solely to operate and improve the website and lead delivery services on behalf of ${DEALER.name}.\n- **Retention** — Lead data is retained for as long as necessary to fulfill the business relationship. You may request deletion at any time.\n- **No independent use** — DMS does not use your personal data for its own marketing purposes. Data is processed only as directed by ${DEALER.name}.\n\nFor questions about how DMS handles your data, contact: **deepak@dapperms.com**`,
   },
   {
     title: 'Data Security',

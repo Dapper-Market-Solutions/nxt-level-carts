@@ -9,6 +9,7 @@ import Financing from './pages/Financing'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
 import Landing from './pages/Landing'
+import CookieConsent from './components/CookieConsent'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -49,6 +50,7 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
+      <CookieConsent />
       <Routes>
         {/* Landing page — no header/footer */}
         <Route path="/promo" element={<PageWrapper><Landing /></PageWrapper>} />
