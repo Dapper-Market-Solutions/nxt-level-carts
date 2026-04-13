@@ -4,11 +4,16 @@ import { DEALER, COLORS, MODELS } from '../config'
 import LeadForm from '../components/LeadForm'
 
 const CATEGORIES = ['All', '2-Seat', '4-Seat', '6-Seat']
+const BRANDS = ['All', ...new Set(MODELS.map(m => m.brand))]
 
 export default function Models() {
   const [filter, setFilter] = useState('All')
+  const [brandFilter, setBrandFilter] = useState('All')
   const [specCart, setSpecCart] = useState(null)
-  const filtered = filter === 'All' ? MODELS : MODELS.filter(m => m.category === filter)
+  const filtered = MODELS.filter(m =>
+    (filter === 'All' || m.category === filter) &&
+    (brandFilter === 'All' || m.brand === brandFilter)
+  )
 
   useEffect(() => {
     document.title = `Our Models | ${DEALER.name} — ICON Electric Golf Carts`
@@ -39,7 +44,20 @@ export default function Models() {
       {/* Filter + Grid */}
       <section className="py-20 px-6" style={{ background: COLORS.cream }}>
         <div className="max-w-7xl mx-auto">
-          <div className="flex justify-center gap-3 mb-12 reveal">
+          <div className="flex flex-wrap justify-center gap-3 mb-4 reveal">
+            {BRANDS.map(b => (
+              <button key={b} onClick={() => setBrandFilter(b)}
+                className="text-xs font-semibold uppercase tracking-wider px-5 py-2.5 transition cursor-pointer"
+                style={{
+                  background: brandFilter === b ? COLORS.primary : 'transparent',
+                  color: brandFilter === b ? '#000' : COLORS.charcoal + '66',
+                  border: brandFilter === b ? `1px solid ${COLORS.primary}` : '1px solid rgba(0,0,0,0.1)',
+                }}>
+                {b}
+              </button>
+            ))}
+          </div>
+          <div className="flex flex-wrap justify-center gap-3 mb-12 reveal">
             {CATEGORIES.map(cat => (
               <button key={cat} onClick={() => setFilter(cat)}
                 className="text-xs font-semibold uppercase tracking-wider px-5 py-2.5 transition cursor-pointer"

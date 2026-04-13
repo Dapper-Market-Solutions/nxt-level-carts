@@ -4,11 +4,16 @@ import { DEALER, COLORS, MODELS, TESTIMONIALS, FINANCING } from '../config'
 import LeadForm from '../components/LeadForm'
 
 const CATEGORIES = ['All', '2-Seat', '4-Seat', '6-Seat']
+const BRANDS = ['All', ...new Set(MODELS.map(m => m.brand))]
 
 export default function Home() {
   const [filter, setFilter] = useState('All')
+  const [brandFilter, setBrandFilter] = useState('All')
   const [specCart, setSpecCart] = useState(null)
-  const filtered = filter === 'All' ? MODELS : MODELS.filter(m => m.category === filter)
+  const filtered = MODELS.filter(m =>
+    (filter === 'All' || m.category === filter) &&
+    (brandFilter === 'All' || m.brand === brandFilter)
+  )
 
   return (
     <>
@@ -94,7 +99,20 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="flex justify-center gap-3 mb-10">
+          <div className="flex flex-wrap justify-center gap-3 mb-4">
+            {BRANDS.map(b => (
+              <button key={b} onClick={() => setBrandFilter(b)}
+                className="text-xs font-semibold uppercase tracking-wider px-5 py-2.5 transition cursor-pointer"
+                style={{
+                  background: brandFilter === b ? COLORS.primary : 'transparent',
+                  color: brandFilter === b ? '#000' : COLORS.charcoal + '66',
+                  border: brandFilter === b ? `1px solid ${COLORS.primary}` : '1px solid rgba(0,0,0,0.1)',
+                }}>
+                {b}
+              </button>
+            ))}
+          </div>
+          <div className="flex flex-wrap justify-center gap-3 mb-10">
             {CATEGORIES.map(cat => (
               <button key={cat} onClick={() => setFilter(cat)}
                 className="text-xs font-semibold uppercase tracking-wider px-5 py-2.5 transition cursor-pointer"

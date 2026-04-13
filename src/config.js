@@ -41,6 +41,7 @@ export const COLORS = {
 export const MODELS = [
   {
     name: 'EPIC E40FX',
+    brand: 'EPIC',
     type: '4-Passenger Luxury',
     badge: 'PGA Show Winner',
     price: '$12,995',
@@ -70,6 +71,7 @@ export const MODELS = [
   },
   {
     name: 'EPIC E60FX',
+    brand: 'EPIC',
     type: '6-Passenger Luxury',
     badge: 'Flagship',
     price: '$14,999',
@@ -99,6 +101,7 @@ export const MODELS = [
   },
   {
     name: 'ICON i40L',
+    brand: 'ICON',
     type: '4-Passenger Lifted Electric',
     badge: 'Popular',
     price: '',
@@ -127,6 +130,7 @@ export const MODELS = [
   },
   {
     name: 'ICON i60L',
+    brand: 'ICON',
     type: '6-Passenger Lifted Electric',
     badge: 'Family',
     price: '$15,999',
@@ -155,6 +159,7 @@ export const MODELS = [
   },
   {
     name: 'EPIC E40L',
+    brand: 'EPIC',
     type: '4-Passenger Lifted',
     badge: 'All-Terrain',
     price: '',
@@ -183,6 +188,7 @@ export const MODELS = [
   },
   {
     name: 'EPIC E60L',
+    brand: 'EPIC',
     type: '6-Passenger Lifted',
     badge: 'Adventure',
     price: '$14,235',
@@ -211,6 +217,7 @@ export const MODELS = [
   },
   {
     name: 'ICON i20',
+    brand: 'ICON',
     type: '2-Passenger Compact',
     badge: 'Entry',
     price: '',
@@ -237,6 +244,7 @@ export const MODELS = [
   },
   {
     name: 'ICON G40L',
+    brand: 'ICON',
     type: '4-Passenger Gas Lifted',
     badge: 'Gas Powered',
     price: '$12,150',
@@ -265,6 +273,7 @@ export const MODELS = [
   },
   {
     name: 'Denago Nomad XL',
+    brand: 'Denago',
     type: '4-Passenger Utility',
     badge: 'New',
     price: '',
@@ -290,6 +299,7 @@ export const MODELS = [
   },
   {
     name: 'Denago Rover XL',
+    brand: 'Denago',
     type: '4-Passenger Adventure',
     badge: 'New',
     price: '',
@@ -315,6 +325,7 @@ export const MODELS = [
   },
   {
     name: 'Denago Rover XL 6',
+    brand: 'Denago',
     type: '6-Passenger Adventure',
     badge: 'New',
     price: '',
