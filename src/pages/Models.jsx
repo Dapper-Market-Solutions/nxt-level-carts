@@ -79,9 +79,9 @@ export default function Models() {
             {filtered.map((model, i) => (
               <div key={model.name} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                    style={{ animation: `fadeUp 0.5s ease forwards ${i * 80}ms`, opacity: 0 }}>
-                <div className="relative aspect-[16/10] overflow-hidden" style={{ background: '#f0ebe5' }}>
+                <div className="relative aspect-[16/10] overflow-hidden flex items-end justify-center" style={{ background: '#f0ebe5' }}>
                   {model.image ? (
-                    <img src={model.image} alt={model.name} className="w-full h-full object-cover" style={{ objectPosition: 'center 60%' }} />
+                    <img src={model.image} alt={model.name} className="w-[75%] h-[75%] object-contain group-hover:scale-105 transition-transform duration-700" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
                       <span className="text-4xl font-extrabold uppercase tracking-tight" style={{ color: 'rgba(0,0,0,0.04)' }}>{model.name}</span>
