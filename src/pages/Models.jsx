@@ -158,10 +158,12 @@ export default function Models() {
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" onClick={() => setSpecCart(null)}>
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
           <div className="relative w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl bg-white" onClick={e => e.stopPropagation()}>
-            <div className="relative aspect-[16/10]" style={{ background: '#f0ebe5' }}>
-              <div className="w-full h-full flex items-center justify-center">
+            <div className="relative aspect-[16/10] flex items-center justify-center p-4" style={{ background: '#f0ebe5' }}>
+              {specCart.image ? (
+                <img src={specCart.image} alt={specCart.name} className="max-w-full max-h-full object-contain" />
+              ) : (
                 <span className="text-5xl font-extrabold uppercase tracking-tight" style={{ color: 'rgba(0,0,0,0.04)' }}>{specCart.name}</span>
-              </div>
+              )}
               {specCart.badge && (
                 <div className="absolute top-3 left-3 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded"
                      style={{ background: COLORS.primary, color: '#000' }}>{specCart.badge}</div>
