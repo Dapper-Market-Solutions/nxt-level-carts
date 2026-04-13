@@ -28,7 +28,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style={{ background: bg, backdropFilter: scrolled ? 'blur(12px)' : 'none', borderBottom: scrolled ? '1px solid rgba(255,255,255,0.06)' : 'none' }}>
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src="/images/nxt-level-logo.avif" alt={DEALER.name} className="h-14 w-auto" style={{ maxWidth: '180px' }} />
+          <img src="/images/nxt-level-logo.png" alt={DEALER.name} className="h-14 w-auto" style={{ maxWidth: '180px' }} />
         </Link>
 
         {/* Desktop nav */}

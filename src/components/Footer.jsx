@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="mb-4">
-              <img src="/images/nxt-level-logo.avif" alt={DEALER.name} className="h-16 w-auto" />
+              <img src="/images/nxt-level-logo.png" alt={DEALER.name} className="h-16 w-auto" />
             </div>
             <p className="text-white/40 text-sm leading-relaxed mb-4 max-w-xs">
               Award-winning ICON electric golf carts. Experience the next level of personal transportation in {DEALER.city}, {DEALER.state}.
