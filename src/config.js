@@ -105,7 +105,7 @@ export const MODELS = [
     type: '4-Passenger Lifted Electric',
     badge: 'Popular',
     price: '',
-    image: '/images/icon-i60lx-white.jpg',
+    image: '/images/icon-i40l.jpg',
     seats: 4,
     category: '4-Seat',
     specs: {
