@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { DEALER, COLORS, MODELS, TESTIMONIALS, FINANCING } from '../config'
 import LeadForm from '../components/LeadForm'
 
-const CATEGORIES = ['All', '2-Seat', '4-Seat', '6-Seat']
+const CATEGORIES = ['All', '4-Seat', '6-Seat']
 const BRANDS = ['All', ...new Set(MODELS.map(m => m.brand))]
 
 export default function Home() {

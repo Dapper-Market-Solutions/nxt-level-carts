@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { DEALER, COLORS, MODELS } from '../config'
 import LeadForm from '../components/LeadForm'
 
-const CATEGORIES = ['All', '2-Seat', '4-Seat', '6-Seat']
+const CATEGORIES = ['All', '4-Seat', '6-Seat']
 const BRANDS = ['All', ...new Set(MODELS.map(m => m.brand))]
 
 export default function Models() {
@@ -71,8 +71,11 @@ export default function Models() {
             ))}
           </div>
 
-          <p className="text-center text-sm mb-8" style={{ color: COLORS.charcoal + '66' }}>
+          <p className="text-center text-sm mb-2" style={{ color: COLORS.charcoal + '66' }}>
             Showing {filtered.length} model{filtered.length !== 1 ? 's' : ''}
+          </p>
+          <p className="text-center text-sm mb-8" style={{ color: COLORS.charcoal + '88' }}>
+            Additional models, configurations, and colors available — <Link to="/contact" style={{ color: COLORS.accent }}>contact us</Link> for details.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -2,45 +2,6 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { DEALER, COLORS } from '../config'
 
-const VALUES = [
-  {
-    title: 'Quality',
-    desc: 'We only carry ICON — the most awarded electric golf cart brand in the industry. Every cart meets our rigorous standards before it reaches you.',
-    icon: (
-      <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
-      </svg>
-    ),
-  },
-  {
-    title: 'Service',
-    desc: 'From your first test drive to years down the road, we stand behind every cart we sell with expert service, maintenance, and genuine parts.',
-    icon: (
-      <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
-      </svg>
-    ),
-  },
-  {
-    title: 'Community',
-    desc: 'Belleville is our home. We are proud to sponsor local events, support our neighbors, and build lasting relationships with every customer we serve.',
-    icon: (
-      <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
-      </svg>
-    ),
-  },
-  {
-    title: 'Innovation',
-    desc: 'ICON carts lead the industry with touchscreen displays, GPS navigation, backup cameras, and DOT street-legal compliance straight from the factory.',
-    icon: (
-      <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z"/>
-      </svg>
-    ),
-  },
-]
-
 export default function About() {
   useEffect(() => {
     document.title = `About Us | ${DEALER.name} — Belleville, MI`
@@ -100,61 +61,6 @@ export default function About() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="reveal mb-12">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.accent }}>The Team</p>
-            <h2 className="text-3xl md:text-4xl font-extrabold" style={{ color: COLORS.charcoal }}>
-              Meet the People Behind <span style={{ color: COLORS.accent }}>{DEALER.name}</span>
-            </h2>
-          </div>
-          <div className="max-w-sm mx-auto reveal">
-            <div className="rounded-xl overflow-hidden shadow-sm" style={{ background: COLORS.cream }}>
-              <div className="aspect-square" style={{ background: '#e8e3de' }}>
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="w-24 h-24 rounded-full flex items-center justify-center" style={{ background: COLORS.primary + '15' }}>
-                    <span className="text-3xl font-extrabold" style={{ color: COLORS.accent }}>AJ</span>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-bold mb-1" style={{ color: COLORS.charcoal }}>Alex Jones</h3>
-                <p className="text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: COLORS.accent }}>Owner</p>
-                <p className="text-sm leading-relaxed" style={{ color: COLORS.charcoal + 'aa' }}>
-                  Alex founded {DEALER.name} with a hands-on approach to customer service and a deep knowledge of electric vehicles. She personally ensures every customer finds the right cart for their needs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="py-20 px-6" style={{ background: COLORS.cream }}>
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-14 reveal">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: COLORS.accent }}>What Drives Us</p>
-            <h2 className="text-3xl md:text-4xl font-extrabold" style={{ color: COLORS.charcoal }}>
-              Our Core Values
-            </h2>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {VALUES.map((v, i) => (
-              <div key={v.title} className="reveal rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-shadow"
-                   style={{ transitionDelay: `${i * 80}ms` }}>
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-                     style={{ background: COLORS.primary + '12', color: COLORS.accent }}>
-                  {v.icon}
-                </div>
-                <h3 className="text-lg font-bold mb-2" style={{ color: COLORS.charcoal }}>{v.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: COLORS.charcoal + 'aa' }}>{v.desc}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
