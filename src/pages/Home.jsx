@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center" style={{ backgroundImage: 'url(/images/hero-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="relative min-h-screen flex items-center" style={{ backgroundImage: 'url(/images/dealership-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="absolute inset-0" style={{ background: 'rgba(26,25,25,0.45)' }} />
         <div className="absolute top-1/3 right-0 w-[600px] h-[600px] rounded-full opacity-[0.06]"
              style={{ background: `radial-gradient(circle, ${COLORS.primary} 0%, transparent 70%)` }} />
