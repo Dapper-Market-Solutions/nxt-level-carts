@@ -24,24 +24,20 @@ function PageWrapper({ children }) {
       entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible') }),
       { threshold: 0.05, rootMargin: '50px 0px -20px 0px' }
     )
-    const timer = setTimeout(() => {
-      document.querySelectorAll('.reveal').forEach(el => {
-        el.classList.remove('visible')
-        observer.observe(el)
-      })
-      // Double rAF ensures DOM is fully painted before checking visibility
+    // On route change, find new reveal elements and set up observation
+    requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          document.querySelectorAll('.reveal').forEach(el => {
-            const rect = el.getBoundingClientRect()
-            if (rect.top < window.innerHeight + 100 && rect.bottom > -100) {
-              el.classList.add('visible')
-            }
-          })
+        document.querySelectorAll('.reveal:not(.visible)').forEach(el => {
+          const rect = el.getBoundingClientRect()
+          if (rect.top < window.innerHeight + 100 && rect.bottom > -100) {
+            el.classList.add('visible')
+          } else {
+            observer.observe(el)
+          }
         })
       })
-    }, 50)
-    return () => { clearTimeout(timer); observer.disconnect() }
+    })
+    return () => { observer.disconnect() }
   }, [pathname])
   return children
 }

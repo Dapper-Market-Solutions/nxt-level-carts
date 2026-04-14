@@ -84,7 +84,7 @@ export default function Models() {
                    style={{ animation: `fadeUp 0.5s ease forwards ${i * 80}ms`, opacity: 0 }}>
                 <div className="relative aspect-[16/10] overflow-hidden flex items-center justify-center p-4" style={{ background: '#f0ebe5' }}>
                   {model.image ? (
-                    <img src={model.image} alt={model.name} className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+                    <img src={model.image} alt={model.name} loading="lazy" className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
                       <span className="text-4xl font-extrabold uppercase tracking-tight" style={{ color: 'rgba(0,0,0,0.04)' }}>{model.name}</span>
