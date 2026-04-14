@@ -48,11 +48,6 @@ export default function Home() {
                 Schedule a Test Drive
               </Link>
             </div>
-            <div className="flex flex-wrap gap-8 mt-16" style={{ animation: 'fadeUp 0.7s ease forwards 0.9s', opacity: 0 }}>
-              {[['ICON', ''], ['EPIC', ''], ['Denago', '']].map(([brand]) => (
-                <div key={brand} className="text-lg font-bold text-white/40 uppercase tracking-wider">{brand}</div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
