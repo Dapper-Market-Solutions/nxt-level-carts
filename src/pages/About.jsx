@@ -40,26 +40,21 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-sm leading-relaxed" style={{ color: COLORS.charcoal + 'aa' }}>
                 <p>
-                  {DEALER.name} was founded right here in {DEALER.city}, {DEALER.state}, with a simple belief: personal electric vehicles should be as refined, reliable, and exciting as the people who drive them.
+                  Next Level Carts isn't just a dealership — it's a story that's been building for a long time.
                 </p>
                 <p>
-                  What started as a passion for electric vehicles quickly evolved into a mission. After researching every brand on the market, we chose to partner exclusively with ICON Electric Vehicles — the most awarded golf cart manufacturer in the industry. Their PGA Show-winning designs, cutting-edge technology, and uncompromising build quality aligned perfectly with our vision.
+                  What started as a father-and-daughter idea quickly turned into something bigger: a place where passion for vehicles, community roots, and a little bit of fun all come together. Located right in the heart of Belleville, our showroom has seen a lot over the years. Long before golf carts lined the floor, this building was home to the original Atchinson Ford dealership, and after the building served as a go-kart repair shop — so you could say we're carrying on a tradition of wheels and innovation.
                 </p>
                 <p>
-                  Today, we are proud to bring ICON's full lineup to Southeast Michigan. From the nimble i20 to the flagship Epic, every cart we sell comes loaded with features that used to be reserved for luxury automobiles: touchscreen displays, GPS navigation, backup cameras, Bluetooth audio, and full DOT street-legal compliance.
+                  Before opening our doors as a dealership in 2025, we operated our commercial property management company out of this very space. But with a deep background in the automotive industry — including hands-on experience with one of the earliest electric cart brands — the pull toward starting something new (and exciting) was hard to ignore.
                 </p>
                 <p>
-                  But we are more than a dealership. We are your neighbors, your partners, and your go-to resource for everything electric golf carts. Whether you need help choosing the right model, navigating financing, or scheduling service down the road — we are here for the long haul.
+                  Today, Next Level Carts is proud to bring that history full circle. We specialize in high-quality golf carts and street-legal LSVs, offering brands like Denago, Epic, and Icon to customers across Metro Detroit. Whether you're cruising your neighborhood, upgrading your lifestyle, or just stopping by to see what's new, we're here to help you find the perfect ride.
                 </p>
               </div>
             </div>
-            <div className="reveal delay-200 rounded-xl overflow-hidden aspect-[4/3]" style={{ background: '#e8e3de' }}>
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-6xl font-extrabold uppercase tracking-tight" style={{ color: 'rgba(0,0,0,0.04)' }}>{DEALER.name}</span>
-                  <p className="text-xs uppercase tracking-widest mt-3" style={{ color: COLORS.accent + '66' }}>Belleville, Michigan</p>
-                </div>
-              </div>
+            <div className="reveal delay-200 rounded-xl overflow-hidden aspect-[4/3]">
+              <img src="/images/dealership-about.jpg" alt={`${DEALER.name} showroom in ${DEALER.city}, ${DEALER.state}`} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -73,7 +68,7 @@ export default function About() {
             Experience the Difference
           </h2>
           <p className="text-white/50 leading-relaxed mb-10 max-w-lg mx-auto">
-            Visit our showroom in {DEALER.city}, {DEALER.state} to see our full lineup of ICON electric golf carts in person. Test drives are always welcome.
+            Visit our showroom in {DEALER.city}, {DEALER.state} to see our full lineup of ICON, EPIC, and Denago electric golf carts and LSVs in person. Test drives are always welcome.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/contact" className="px-8 py-4 text-sm font-bold uppercase tracking-wider transition hover:-translate-y-0.5"

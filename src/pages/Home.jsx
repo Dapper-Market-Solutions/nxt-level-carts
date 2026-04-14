@@ -36,7 +36,7 @@ export default function Home() {
             </h1>
             <p className="text-lg text-white/55 leading-relaxed mb-10 max-w-lg"
                style={{ animation: 'fadeUp 0.7s ease forwards 0.5s', opacity: 0 }}>
-              Award-winning ICON electric golf carts with touchscreen displays, backup cameras, and street-legal compliance. Experience the difference at our {DEALER.city} showroom.
+              Premium electric golf carts and LSVs from ICON, EPIC, and Denago — with touchscreen displays, backup cameras, and street-legal compliance. Experience the difference at our {DEALER.city} showroom.
             </p>
             <div className="flex flex-wrap gap-4" style={{ animation: 'fadeUp 0.7s ease forwards 0.7s', opacity: 0 }}>
               <Link to="/models" className="px-8 py-4 text-sm font-bold uppercase tracking-wider transition-all hover:-translate-y-0.5"

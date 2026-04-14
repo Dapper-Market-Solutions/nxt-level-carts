@@ -73,12 +73,12 @@ export default function Landing() {
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-5"
                 style={{ animation: 'fadeUp 0.7s ease forwards 0.3s', opacity: 0 }}>
-              Save Up to <span style={{ color: COLORS.primary }}>$2,000</span> on Select ICON Models
+              Save Up to <span style={{ color: COLORS.primary }}>$2,000</span> on Select Models
             </h1>
 
             <p className="text-base md:text-lg text-white/55 leading-relaxed mb-8"
                style={{ animation: 'fadeUp 0.7s ease forwards 0.5s', opacity: 0 }}>
-              We have a limited number of award-winning ICON electric golf carts at exclusive spring pricing. Once they are gone, they are gone. Claim your offer before inventory runs out.
+              We have a limited number of award-winning electric golf carts from ICON, EPIC, and Denago at exclusive spring pricing. Once they are gone, they are gone. Claim your offer before inventory runs out.
             </p>
 
             {/* Countdown */}

@@ -16,7 +16,7 @@ export default function Models() {
   )
 
   useEffect(() => {
-    document.title = `Our Models | ${DEALER.name} — ICON Electric Golf Carts`
+    document.title = `Our Models | ${DEALER.name} — ICON, EPIC & Denago Electric Golf Carts`
   }, [])
 
   return (
@@ -36,7 +36,7 @@ export default function Models() {
           </h1>
           <p className="text-lg text-white/50 max-w-xl mx-auto"
              style={{ animation: 'fadeUp 0.7s ease forwards 0.5s', opacity: 0 }}>
-            Award-winning ICON electric golf carts — from nimble 2-seaters to spacious 6-passenger cruisers. Find the one that fits your lifestyle.
+            Premium electric golf carts and LSVs from ICON, EPIC, and Denago — from 4-passenger cruisers to spacious 6-seat models. Find the one that fits your lifestyle.
           </p>
         </div>
       </section>

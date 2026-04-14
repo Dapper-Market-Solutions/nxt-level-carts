@@ -12,7 +12,7 @@ export default function Footer() {
               <img src="/images/nxt-level-logo.png" alt={DEALER.name} className="h-32 w-auto" />
             </div>
             <p className="text-white/40 text-sm leading-relaxed mb-4 max-w-xs">
-              Award-winning ICON electric golf carts. Experience the next level of personal transportation in {DEALER.city}, {DEALER.state}.
+              Premium ICON, EPIC, and Denago electric golf carts and LSVs. Experience the next level of personal transportation in {DEALER.city}, {DEALER.state}.
             </p>
             <p className="text-white/30 text-xs mb-4">{DEALER.tagline}</p>
             {/* Social links */}

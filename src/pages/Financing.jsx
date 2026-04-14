@@ -7,7 +7,7 @@ const STEPS = [
   {
     num: '01',
     title: 'Choose Your Model',
-    desc: 'Browse our full lineup of ICON electric golf carts and find the one that fits your lifestyle — from compact 2-seaters to spacious 6-passenger cruisers.',
+    desc: 'Browse our full lineup of ICON, EPIC, and Denago electric golf carts and find the one that fits your lifestyle — from compact 2-seaters to spacious 6-passenger cruisers.',
   },
   {
     num: '02',
@@ -22,7 +22,7 @@ const STEPS = [
   {
     num: '04',
     title: 'Drive Home',
-    desc: `Sign the paperwork, grab the keys, and take your new ICON golf cart home. It is that simple. Welcome to ${DEALER.name}.`,
+    desc: `Sign the paperwork, grab the keys, and take your new golf cart home. It is that simple. Welcome to ${DEALER.name}.`,
   },
 ]
 

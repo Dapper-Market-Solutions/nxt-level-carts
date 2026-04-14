@@ -3,7 +3,7 @@
 
 export const DEALER = {
   name: 'NEXT Level Carts',
-  tagline: 'Premium Electric Golf Carts',
+  tagline: 'Premium Electric Golf Carts & LSVs — ICON, EPIC, and Denago',
   slogan: 'Take It to the NEXT Level.',
   phone: '',
   email: 'ajones@nxtlevelcarts.com',
@@ -51,7 +51,7 @@ export const MODELS = [
     specs: {
       Seats: '4',
       Motor: '6.3kW AC',
-      Battery: '51V/105Ah ECO Lithium',
+      Battery: '51.2V/105Ah Eco Lithium',
       Range: '40+ miles',
       Display: '10" Multimedia',
       Speed: 'Up to 25 mph',
@@ -67,7 +67,7 @@ export const MODELS = [
       '3-Point Restraints',
       '14" Premium Wheels',
     ],
-    colors: ['Alpine White', 'Jet Black', 'Crimson Red', 'Slate Gray', 'Deep Navy', 'Hunter Green'],
+    colors: ['Burgundy', 'Black', 'Midnight Blue', 'Pearl White', 'Cashmere', 'Charcoal'],
   },
   {
     name: 'EPIC E60FX',
@@ -81,7 +81,7 @@ export const MODELS = [
     specs: {
       Seats: '6',
       Motor: '6.3kW AC',
-      Battery: '51V/105Ah ECO Lithium',
+      Battery: '51.2V/105Ah Eco Lithium',
       Range: '40+ miles',
       Display: '10" Multimedia',
       Speed: 'Up to 25 mph',
@@ -97,7 +97,7 @@ export const MODELS = [
       'Expandable Storage',
       'Cup Holders Throughout',
     ],
-    colors: ['Alpine White', 'Jet Black', 'Crimson Red', 'Slate Gray', 'Deep Navy', 'Hunter Green'],
+    colors: ['Burgundy', 'Black', 'Midnight Blue', 'Pearl White', 'Cashmere', 'Charcoal'],
   },
   {
     name: 'ICON i40X',
@@ -110,8 +110,8 @@ export const MODELS = [
     category: '4-Seat',
     specs: {
       Seats: '4',
-      Motor: '48V 4kW AC',
-      Battery: 'Lithium or Lead Acid',
+      Motor: '5kW AC',
+      Battery: '51.2V/105Ah Eco Lithium',
       Range: '30–50 miles',
       Display: '10.1" Touchscreen',
       Speed: 'Up to 25 mph',
@@ -126,7 +126,7 @@ export const MODELS = [
       'USB & 12V Ports',
       'LED Headlights',
     ],
-    colors: ['White', 'Black', 'Red', 'Charcoal', 'Navy', 'Hunter Green'],
+    colors: ['White', 'Silver', 'Champagne', 'Black', 'Sangria', 'Forest Green', 'Caribbean Blue'],
   },
   {
     name: 'ICON i60LX',
@@ -139,8 +139,8 @@ export const MODELS = [
     category: '6-Seat',
     specs: {
       Seats: '6',
-      Motor: '48V 4kW AC',
-      Battery: 'Lithium or Lead Acid',
+      Motor: '5kW AC',
+      Battery: '51.2V/105Ah Eco Lithium',
       Range: '30–50 miles',
       Display: '10.1" Touchscreen',
       Speed: 'Up to 25 mph',
@@ -155,7 +155,7 @@ export const MODELS = [
       'All-Terrain Capable',
       'USB & 12V Ports',
     ],
-    colors: ['White', 'Black', 'Red', 'Charcoal', 'Navy', 'Hunter Green'],
+    colors: ['White', 'Silver', 'Champagne', 'Black', 'Sangria', 'Forest Green', 'Caribbean Blue'],
   },
   {
     name: 'Denago Nomad XL',
@@ -168,8 +168,8 @@ export const MODELS = [
     category: '4-Seat',
     specs: {
       Seats: '4',
-      Motor: 'Electric',
-      Battery: 'Lithium',
+      Motor: '5kW AC',
+      Battery: '51.2V/105Ah Lithium',
       Range: '40+ miles',
       Speed: 'Up to 25 mph',
     },
@@ -181,7 +181,7 @@ export const MODELS = [
       'Backup Camera',
       'USB Charging Ports',
     ],
-    colors: ['White', 'Black', 'Gray'],
+    colors: ['Black', 'White', 'Gray', 'Navy Blue', 'Glacier Blue', 'Aqua', 'Lava Orange', 'Scarlet Red', 'Verdant Green', 'Matte White', 'Matte Black'],
   },
   {
     name: 'Denago Rover XL',
@@ -194,8 +194,8 @@ export const MODELS = [
     category: '4-Seat',
     specs: {
       Seats: '4',
-      Motor: 'Electric',
-      Battery: 'Lithium',
+      Motor: '5kW AC',
+      Battery: '51.2V/105Ah Lithium',
       Range: '40+ miles',
       Speed: 'Up to 25 mph',
     },
@@ -207,7 +207,7 @@ export const MODELS = [
       'Backup Camera',
       'USB Charging Ports',
     ],
-    colors: ['Gray', 'Black', 'White'],
+    colors: ['Black', 'White', 'Gray', 'Navy Blue', 'Glacier Blue', 'Aqua', 'Lava Orange', 'Scarlet Red', 'Verdant Green', 'Matte White', 'Matte Black'],
   },
   {
     name: 'Denago Rover XL 6',
@@ -220,8 +220,8 @@ export const MODELS = [
     category: '6-Seat',
     specs: {
       Seats: '6',
-      Motor: 'Electric',
-      Battery: 'Lithium',
+      Motor: '5kW AC',
+      Battery: '51.2V/105Ah Lithium',
       Range: '40+ miles',
       Speed: 'Up to 25 mph',
     },
@@ -234,7 +234,7 @@ export const MODELS = [
       'Backup Camera',
       'USB Charging Ports',
     ],
-    colors: ['Lava', 'Black', 'White', 'Gray'],
+    colors: ['Black', 'White', 'Gray', 'Blue', 'Lava Orange', 'Scarlet Red', 'Verdant Green'],
   },
 ]
 
