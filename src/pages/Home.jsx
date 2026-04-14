@@ -48,12 +48,9 @@ export default function Home() {
                 Schedule a Test Drive
               </Link>
             </div>
-            <div className="flex flex-wrap gap-12 mt-16" style={{ animation: 'fadeUp 0.7s ease forwards 0.9s', opacity: 0 }}>
-              {[['48V AC', 'Motor'], ['40+ Mile', 'Range'], ['25 mph', 'Top Speed']].map(([val, label]) => (
-                <div key={label}>
-                  <div className="text-2xl font-bold text-white">{val}</div>
-                  <div className="text-xs uppercase tracking-wider text-white/25 mt-1">{label}</div>
-                </div>
+            <div className="flex flex-wrap gap-8 mt-16" style={{ animation: 'fadeUp 0.7s ease forwards 0.9s', opacity: 0 }}>
+              {[['ICON', ''], ['EPIC', ''], ['Denago', '']].map(([brand]) => (
+                <div key={brand} className="text-lg font-bold text-white/40 uppercase tracking-wider">{brand}</div>
               ))}
             </div>
           </div>
