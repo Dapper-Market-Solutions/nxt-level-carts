@@ -24,6 +24,12 @@ export default function LeadForm({ source = 'website', compact = false, dark = f
         }),
       })
     } catch (_) {}
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({
+      event: 'Lead',
+      lead_source: source,
+      lead_model: form.model || '',
+    })
     setDone(true)
   }
 
