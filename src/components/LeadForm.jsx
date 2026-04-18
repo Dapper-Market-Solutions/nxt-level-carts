@@ -24,12 +24,12 @@ export default function LeadForm({ source = 'website', compact = false, dark = f
         }),
       })
     } catch (_) {}
-    window.dataLayer = window.dataLayer || []
-    window.dataLayer.push({
-      event: 'Lead',
-      lead_source: source,
-      lead_model: form.model || '',
-    })
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'Lead', {
+        content_name: 'NXT Level Carts Lead',
+        content_category: form.model || source,
+      })
+    }
     setDone(true)
   }
 
