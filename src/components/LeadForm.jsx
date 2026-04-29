@@ -2,8 +2,15 @@ import { useState } from 'react'
 import { DEALER, COLORS, MODELS } from '../config'
 
 export default function LeadForm({ source = 'website', compact = false, dark = false, showModel = true }) {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', model: '' })
+  const [form, setForm] = useState({ name: '', email: '', phone: '', models: [] })
   const [done, setDone] = useState(false)
+
+  function toggleModel(name) {
+    setForm(f => ({
+      ...f,
+      models: f.models.includes(name) ? f.models.filter(x => x !== name) : [...f.models, name],
+    }))
+  }
 
   const handleSubmit = async e => {
     e.preventDefault()
@@ -13,7 +20,11 @@ export default function LeadForm({ source = 'website', compact = false, dark = f
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          ...form,
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          models: form.models,
+          model: form.models.join(', '),
           source,
           pageUrl: window.location.pathname,
           referrer: document.referrer || 'direct',
@@ -27,7 +38,7 @@ export default function LeadForm({ source = 'website', compact = false, dark = f
     if (typeof window.fbq === 'function') {
       window.fbq('track', 'Lead', {
         content_name: 'NXT Level Carts Lead',
-        content_category: form.model || source,
+        content_category: form.models.join(', ') || source,
       })
     }
     setDone(true)
@@ -69,12 +80,28 @@ export default function LeadForm({ source = 'website', compact = false, dark = f
         onFocus={e => e.target.style.borderColor = COLORS.accent}
         onBlur={e => e.target.style.borderColor = dark ? 'rgba(255,255,255,0.1)' : '#d1d5db'} />
       {showModel && (
-        <select value={form.model} onChange={e => setForm({ ...form, model: e.target.value })}
-          className={inputClass + ' appearance-none cursor-pointer'} style={{ ...inputStyle, color: form.model ? (dark ? '#fff' : COLORS.charcoal) : (dark ? 'rgba(255,255,255,0.25)' : '#9ca3af') }}>
-          <option value="">Interested in a specific model?</option>
-          {MODELS.map(m => <option key={m.name} value={m.name}>{m.name} — {m.type}</option>)}
-          <option value="not-sure">Not sure yet — help me choose</option>
-        </select>
+        <div>
+          <p className={`text-sm font-medium mb-2 ${dark ? 'text-white/70' : 'text-gray-600'}`}>
+            What are you interested in? <span className="font-normal text-xs opacity-75">(select all that apply)</span>
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {[...MODELS.map(m => m.name), 'Not sure — help me choose'].map(name => {
+              const selected = form.models.includes(name)
+              return (
+                <button key={name} type="button" onClick={() => toggleModel(name)}
+                  className="px-3.5 py-2 rounded text-xs font-semibold uppercase tracking-wider transition cursor-pointer border"
+                  style={selected
+                    ? { background: COLORS.accent, color: '#fff', borderColor: COLORS.accent }
+                    : (dark
+                        ? { borderColor: 'rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.75)', background: 'rgba(255,255,255,0.04)' }
+                        : { borderColor: '#d1d5db', color: COLORS.charcoal, background: '#fff' })
+                  }>
+                  {name}
+                </button>
+              )
+            })}
+          </div>
+        </div>
       )}
       <button type="submit"
         className="w-full py-4 rounded text-sm font-bold uppercase tracking-wider transition-all hover:-translate-y-0.5 cursor-pointer"
